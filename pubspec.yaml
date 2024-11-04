@@ -1,0 +1,131 @@
+name: feeef_marchant
+description: "feeef merchant app"
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.3.11+28
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_acrylic: ^1.1.4
+  cuid2: ^3.1.0
+  dio: ^5.4.3+1
+  faker_dart: ^0.2.1
+  flutter_bloc: ^8.1.5
+  form_validator: ^2.1.1
+  freezed_annotation: ^2.4.1
+  go_router: ^14.1.1
+  google_fonts: ^6.2.1
+  http: ^1.2.1
+  ionicons: ^0.2.2
+  json_annotation: ^4.9.0
+  lib: ^0.0.3
+  motif: ^0.0.6
+  zod_validation: ^1.0.5
+  i18n: ^4.1.0
+  meta: ^1.15.0
+  bloc: ^8.1.4
+  form_builder_validators: ^9.1.0
+  file_picker: ^8.0.3
+  flutter_carousel_widget: ^2.2.0
+  fl_chart: ^0.68.0
+  timeago: ^3.6.1
+  intl: ^0.19.0
+  recase: ^4.1.0
+  csv: ^6.0.0
+  file_saver: ^0.2.12
+  universal_io: ^2.2.2
+  flex_color_picker: ^3.5.0
+  url_launcher: ^6.2.6
+  shared_preferences: ^2.2.3
+  pro_image_editor: ^2.7.9
+  mime: ^1.0.5
+  expandable: ^5.0.1
+  slang: ^3.30.2
+  slang_flutter: ^3.30.0
+  # fast_image_resizer: ^0.0.2
+  # image_compression_flutter: ^1.0.4
+  flutter_markdown: ^0.7.1
+  flutter_barcode_listener: ^0.1.4
+  firebase_messaging: ^15.0.3
+  # image_compression_flutter: ^1.0.4
+  feature_discovery:
+    git:
+      url: https://github.com/maheshmnj/feature_discovery.git
+      ref: master
+  firebase_core: ^3.2.0
+  slugify: ^2.0.0
+  permission_handler: ^11.3.1
+  appflowy_editor: ^3.1.0
+  package_info_plus: ^8.0.0
+  # flutter_eval: ^0.7.6
+  # dart_eval: ^0.7.9
+  youtube_parser: ^2.1.4
+
+
+dependency_overrides:
+  url_launcher: ^6.2.6
+  image_picker: ^1.1.0
+  intl: ^0.19.0
+  meta: ^1.15.0
+  http: ^1.2.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.10
+  freezed: ^2.5.3
+  json_serializable: ^6.8.0
+  flutter_launcher_icons: ^0.13.1
+  slang_build_runner: ^3.30.0
+  test: ^1.25.7
+  flutter_gen_runner:
+
+flutter:
+  uses-material-design: true
+
+  generate: true
+  assets:
+    - assets/images/
+    - assets/motifs/
+    - assets/integrations/yalidine/
+    - assets/integrations/procolis/
+    - assets/integrations/noest/
+    - assets/integrations/maystro/
+    - assets/integrations/meta/
+    - assets/integrations/ecotrack/
+    - assets/feeef/
+
+flutter_launcher_icons:
+  image_path_android: "assets/feeef/feeef_icon.png"
+  image_path_ios: "assets/feeef/feeef_icon.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  adaptive_icon_background: "#ffffff" # only available for Android 8.0 devices and above
+  adaptive_icon_foreground: "assets/feeef/feeef_icon_foreground.png" # only available for Android 8.0 devices and above
+  adaptive_icon_monochrome: "assets/feeef/feeef_icon_foreground.png" # only available for Android 13 devices and above
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
+  background_color_ios: "#ffffff"
+  web:
+    generate: true
+    image_path: "assets/feeef/feeef_icon.png"
+    background_color: "#ffffff"
+    theme_color: "#60EA60"
+  windows:
+    generate: true
+    image_path: "assets/feeef/feeef_icon_macos.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/feeef/feeef_icon_macos.png"

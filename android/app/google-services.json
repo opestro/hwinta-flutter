@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24740023407",
+    "project_id": "feeefnet",
+    "storage_bucket": "feeefnet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24740023407:android:5f7cb1165f028da323519a",
+        "android_client_info": {
+          "package_name": "dz.feeef.marcahnt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUihCFzaQOL27obbTxIcQXBexHDtO1Zgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta flt-viewport="" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="feeef project.">
+  <!-- SEO -->
+  <meta name="keywords" content="feeef, e-commerce, shop, shopfy">
+  <meta name="author" content="mohamed lounnas">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="description" content="feeef is an e-commerce platform that allows users to create and manage their own shops.">
+  <meta property="og:title" content="feeef | E-Commerce Platform">
+  <meta property="og:description" content="feeef is an e-commerce platform that allows users to create and manage their own shops.">
+  <meta property="og:image" content="https://web.feeef.net/icons/Icon-192.png">
+  <meta property="og:url" content="https://web.feeef.net">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="feeef">
+  <meta name="twitter:title" content="feeef | E-Commerce Platform">
+  <meta name="twitter:description" content="feeef is an e-commerce platform that allows users to create and manage their own shops.">
+  <meta name="twitter:image" content="https://web.feeef.net/icons/Icon-192.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="fash">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>feeef | marchant</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- // loading Style -->
+  <style>
+    /* html {
+      --clr-s: white;
+      background-color: black;
+    } */
+
+    .prgc {
+      height: 36px;
+      width: 36px;
+      transform: rotate(-90deg);
+      transform-origin: center center;
+      will-change: transform;
+      overflow: visible
+    }
+
+    .prgc.prg-inf {
+      animation: an-prgc 2000ms linear infinite both
+    }
+
+    .prgc circle {
+      stroke-dashoffset: calc(calc(100 + calc(var(--prg-p) * calc(var(--is-rtl) * 2 - 1))) * 114px / 100);
+      stroke-dasharray: 114;
+      stroke-width: 3px;
+      fill: none;
+      stroke: #4caf50;
+      stroke: var(--clr-s, #4caf50);
+      will-change: stroke-dashoffset, transform;
+      transition-property: stroke-dashoffset;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: center center
+    }
+
+    .prgc.prg-inf {
+      animation: an-prgc 2000ms linear infinite both
+    }
+
+    .prgc.prg-inf circle {
+      animation: an-prg-crcl-rtl 1200ms infinite both
+    }
+
+    @keyframes an-prgc {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(calc(-360deg * calc(2 - 1)))
+      }
+    }
+
+    @keyframes an-prg-crcl-rtl {
+      0% {
+        stroke-dashoffset: -20;
+        transform: rotate(-30deg)
+      }
+
+      50% {
+        stroke-dashoffset: -110;
+        transform: rotate(-360deg)
+      }
+
+      to {
+        stroke-dashoffset: -20;
+        transform: rotate(-390deg)
+      }
+    }
+
+    @keyframes an-prg-inf-a-rtl {
+      0% {
+        left: 100%;
+        right: -25%
+      }
+
+      25% {
+        left: 0%;
+        right: 25%
+      }
+
+      75% {
+        left: 0%;
+        right: 150%
+      }
+
+      to {
+        left: 0%;
+        right: 150%
+      }
+    }
+
+    @keyframes an-prg-inf-b-rtl {
+      0% {
+        left: 100%;
+        right: -50%
+      }
+
+      40% {
+        animation-timing-function: cubic-bezier(0.4, 0.6, 0.6, 0.9);
+        left: 100%;
+        right: -100%
+      }
+
+      75% {
+        left: -10%;
+        right: 100%
+      }
+
+      to {
+        left: -50%;
+        right: 125%
+      }
+    }
+
+    .loading {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body id="feeef-3"
+  style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none;">
+  <div id="loading" class="loading" style="background: whitesmoke;position: relative;height: 100%;">
+    <div style="text-align: center;">
+      <img alt="DASH" src="/icons/Icon-192.png" style="max-width: 100px;">
+      <div style="height: 12px;"></div>
+      <svg class="prgc prg-inf" viewBox="0 0 38 38">
+        <circle cy="50%" cx="50%" r="18" style="stroke-linecap: round;stroke-width: 6;stroke: #60ea60;"></circle>
+      </svg>
+      <!-- loading bar h 3px -->
+      <div style="height: 5px;margin-top: 2rem;width: 149px;display: flex;border-radius: 100px;overflow: hidden;background: white;">
+        <div style="transition: all 1s;width: calc(var(--loading-bar-width) * 250px);background-color: #60ea60;display: inline-block;border-radius: 10px;"></div>
+      </div>
+
+      <h1 style="font-size: 14px;font-weight: lighter;font-family: 'Gill Sans', sans-serif;position: absolute;bottom: 100px;right: 0;left: 0;text-align: center;">
+        feeef softwere | Marchant App
+        <br>
+        BETA v1.3.8 build 25
+      </h1>
+    </div>
+  </div>
+
+  <script>
+
+const loadingBar = document.body;
+    let width = 0;
+    const increaseWidth = () => {
+        if (width < 100) {
+            const increment = Math.random() * 5; // Random increment between 0 and 10
+            width = Math.min(width + increment, 100);
+            document.documentElement.style.setProperty('--loading-bar-width', `${width/100}`);
+            setTimeout(increaseWidth, Math.random() * 2000); // Random delay between increments
+        }
+    };
+    increaseWidth();
+
+
+    if ('serviceWorker' in navigator) {
+        // Service workers are supported. Use them.
+        window.addEventListener('load', function () {
+          // Register Firebase Messaging service worker.
+          navigator.serviceWorker.register('firebase-messaging-sw.js', {
+            scope: '/firebase-cloud-messaging-push-scope',
+          });
+        });
+      }
+  </script>
+  <script src='flutter_bootstrap.js?v={{flutter_service_worker_version}}' async></script>
+</body>
+
+</html>
